@@ -89,13 +89,13 @@ if __name__ == "__main__":
 
     guiWindow = tk.Tk()  
     
-    guiWindow.title("To-Do List Productivity tool - CodeXD")  
+    guiWindow.title("Task_1_To-Do List")  
       
     guiWindow.geometry("500x450+750+250")  
       
     guiWindow.resizable(0, 0)  
     
-    guiWindow.configure(bg = "#FAEBD7")  
+    guiWindow.configure(bg = "#F2EDEB")  
   
      
     the_connection = sql.connect('listOfTasks.db')  
@@ -108,9 +108,9 @@ if __name__ == "__main__":
     tasks = []  
       
       
-    header_frame = tk.Frame(guiWindow, bg = "#FAEBD7")  
-    functions_frame = tk.Frame(guiWindow, bg = "#FAEBD7")  
-    listbox_frame = tk.Frame(guiWindow, bg = "#FAEBD7")  
+    header_frame = tk.Frame(guiWindow, bg = "#F2EDEB")  
+    functions_frame = tk.Frame(guiWindow, bg = "#F2EDEB")  
+    listbox_frame = tk.Frame(guiWindow, bg = "#F2EDEB")  
   
     
     header_frame.pack(fill = "both")  
@@ -120,10 +120,10 @@ if __name__ == "__main__":
     
     header_label = ttk.Label(  
         header_frame,  
-        text = "To Do list productivity tool",  
-        font = ("Brush Script MT", "30"),  
-        background = "#FAEBD7",  
-        foreground = "#8B4513"  
+        text = "To Do list",  
+        font = ("Helvetica", 18, "bold"),  
+        background = "#F2EDEB",  
+        foreground = "#333333"  
     )  
     
     header_label.pack(padx = 20, pady = 20)  
@@ -132,9 +132,9 @@ if __name__ == "__main__":
     task_label = ttk.Label(  
         functions_frame,  
         text = "Enter the Task:",  
-        font = ("Consolas", "11", "bold"),  
-        background = "#FAEBD7",  
-        foreground = "#000000"  
+        font = ("Helvetica", 18, "bold"),  
+        background = "#F2EDEB",  
+        foreground = "#333333"  
     )  
     
     task_label.place(x = 30, y = 40)  
@@ -142,10 +142,10 @@ if __name__ == "__main__":
     
     task_field = ttk.Entry(  
         functions_frame,  
-        font = ("Consolas", "12"),  
+        font = ("Helvetica", 11, "bold"),  
         width = 18,  
-        background = "#FFF8DC",  
-        foreground = "#A52A2A"  
+        background = "#F2EDEB",  
+        foreground = "#333333"  
     )  
     
     task_field.place(x = 30, y = 80)  
@@ -188,7 +188,7 @@ if __name__ == "__main__":
         height = 13,  
         selectmode = 'SINGLE',  
         background = "#FFFFFF",  
-        foreground = "#000000",  
+        foreground = "#333333",  
         selectbackground = "#CD853F",  
         selectforeground = "#FFFFFF"  
     )  
